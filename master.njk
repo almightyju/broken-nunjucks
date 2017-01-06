@@ -1,0 +1,8 @@
+Foo
+
+{% macro test(path) %}
+    macro
+    {% include path %}
+{% endmacro %}
+
+{{ test('inc.njk') }}
